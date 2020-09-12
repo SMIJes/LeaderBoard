@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/submit_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.activitiesAndFragments.SubmitActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/submit_page_header"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="35dp"
+            android:background="#00ffffff"
+            android:contentDescription="@string/back_button"
+            tools:srcCompat="@tools:sample/avatars" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/first_name_et"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:autofillHints=""
+        android:background="@drawable/submit_page_edit_text_background"
+        android:hint="@string/first_name"
+        android:inputType="text|textPersonName"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_30"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <EditText
+        android:id="@+id/last_name_et"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:background="@drawable/submit_page_edit_text_background"
+        android:hint="@string/last_name"
+        android:inputType="text|textPersonName"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline_50"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_30"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:background="@drawable/submit_page_edit_text_background"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@id/github_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_et"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <EditText
+        android:id="@+id/github_et"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:autofillHints=""
+        android:background="@drawable/submit_page_edit_text_background"
+        android:hint="@string/github"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline_70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/submit_page_button_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline_75"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline_25"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline_70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

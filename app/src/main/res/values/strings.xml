@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">LEADERBOARD</string>
+    <string name="tab_text_1">Learning Leaders</string>
+    <string name="tab_text_2">Skill IQ Leaders</string>
+    <string name="patch">patch</string>
+    <string name="text_view">TextView</string>
+    <string name="ahmed_hany">Ahmed Hany</string>
+    <string name="_300_skill_iq_score_egypt">300 Skill IQ Score, Egypt</string>
+    <string name="submit">Submit</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="github">Project on GITHUB (link)</string>
+    <string name="final_submit_btn">final_submit_btn</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="landing_image">Landing Image</string>
+    <string name="back_button">back_button</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure">Are you sure</string>
+    <string name="cancel_icon">cancel icon</string>
+    <string name="question_mark">/?</string>
+    <string name="question_mark_string">question mark</string>
+    <string name="p">P</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="submission_not_successful">Submission not Successful</string>
+</resources>

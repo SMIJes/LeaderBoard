@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirmation_cv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.activitiesAndFragments.DialogueFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/confirmation_cl"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:background="@drawable/submit_page_edit_text_background"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/cancel_icon"
+            android:src="@drawable/ic_action_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="start|bottom"
+            android:paddingStart="0dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="5dp"
+            android:text="@string/are_you_sure"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/question_mark_tv"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/question_mark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:text="@string/p"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="@id/sure_tv" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/yes_bt"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/yes"
+            android:gravity="center"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textColor="#FFA500"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:theme="@style/Theme.MaterialComponents"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sure_tv"
+            app:strokeColor="#FFA500"
+            app:strokeWidth="2dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/positive_response_cl"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:background="@drawable/submit_page_edit_text_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/cancel_icon"
+            android:src="@drawable/ic_baseline_check_circle_24"
+            app:layout_constraintBottom_toTopOf="@+id/response_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/response_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/submission_successful"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/negative_response_cl"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:background="@drawable/submit_page_edit_text_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/icon1_iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/cancel_icon"
+            android:src="@drawable/ic_baseline_warning_24"
+            app:layout_constraintBottom_toTopOf="@+id/response1_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/response1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:text="@string/submission_not_successful"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
